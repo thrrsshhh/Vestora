@@ -324,7 +324,7 @@ hr {
 /* sudo selectors */
 
 .menu:hover {
-  color: rgb(245, 104, 52);
+  color: rgb(52, 65, 245);
 }
 
 .profile:hover {
@@ -333,7 +333,7 @@ hr {
 
 .profile:hover .username {
   cursor: pointer;
-  color: rgb(223, 91, 43);
+  color: rgb(52, 65, 245);
 }
 
 .orders {

@@ -21,7 +21,7 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <img src="logo.png" style={{ width: "50px" }} />
+      <b>Vestora</b>
       <div className="menus">
         <ul>
           <li>
@@ -42,16 +42,6 @@ const Menu = () => {
           <li>
             <Link style={{ textDecoration: "none" }} to="/positions" onClick={() => handleMenuClick(3)}>
               <p className={selectedMenu == 0 ? activeMenuClass : menuClass}>Positions</p>
-            </Link>
-          </li>
-          <li>
-            <Link style={{ textDecoration: "none" }} to="/funds" onClick={() => handleMenuClick(4)}>
-              <p className={selectedMenu == 0 ? activeMenuClass : menuClass}>Funds</p>
-            </Link>
-          </li>
-          <li>
-            <Link style={{ textDecoration: "none" }} to="/apps" onClick={() => handleMenuClick(5)}>
-              <p className={selectedMenu == 0 ? activeMenuClass : menuClass}>Apps</p>
             </Link>
           </li>
         </ul>

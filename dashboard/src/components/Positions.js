@@ -28,7 +28,7 @@ const Positions = () => {
       {
         label: "Stock Price",
         data: allPositions.map((stock) => stock.price),
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
+        backgroundColor: "rgba(23, 69, 175, 0.5)",
       },
     ],
   };
