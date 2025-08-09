@@ -2,50 +2,73 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  const styles = {
+    navbar: {
+      display: "flex",
+      flexDirection: "column",
+      backgroundColor: "#fff",
+      borderBottom: "1px solid #e5e7eb",
+      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+    },
+    container: {
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      padding: "14px 32px",
+      flexWrap: "wrap",
+    },
+    brandText: {
+      fontSize: "22px",
+      fontWeight: "600",
+      color: "#1f2937",
+      textDecoration: "none",
+    },
+    linksWrapper: {
+      display: "flex",
+      gap: "20px",
+      flexWrap: "wrap",
+      alignItems: "center",
+      justifyContent: "center",
+      marginTop: "10px",
+    },
+    link: {
+      textDecoration: "none",
+      color: "#1f2937",
+      fontSize: "15px",
+      padding: "6px 10px",
+      borderRadius: "5px",
+      transition: "0.2s ease-in-out",
+    },
+    iconLink: {
+      fontSize: "18px",
+    },
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg border-bottom" style={{ backgroundColor: "#FFF" }}>
-      <div className="container p-2">
-        <Link className="navbar-brand" to="/">
-          <img src="media/images/logo.svg" alt="logo" style={{ width: "25%" }} />
+    <nav style={styles.navbar}>
+      <div style={styles.container}>
+        <Link to="/" style={styles.brandText}>
+          Vestora
         </Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <form className="d-flex" role="search">
-            <ul className="navbar-nav mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="https://zerodha-clone-dashboard.vercel.app/register">
-                  Register
-                </a>
-              </li>
-              <li className="nav-item active">
-                <Link className="nav-link" to="/about">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item active">
-                <Link className="nav-link" to="/product">
-                  Product
-                </Link>
-              </li>
-              <li className="nav-item active">
-                <Link className="nav-link" to="/pricing">
-                  Pricing
-                </Link>
-              </li>
-              <li className="nav-item active">
-                <Link className="nav-link" to="/support">
-                  Support
-                </Link>
-              </li>
-              <li className="nav-item active">
-                <Link className="nav-link" to="/">
-                  <i class="fa-solid fa-bars"></i>
-                </Link>
-              </li>
-            </ul>
-          </form>
+        <div style={styles.linksWrapper}>
+          <a
+            href="https://zerodha-clone-dashboard.vercel.app/register"
+            style={styles.link}
+          >
+            Register
+          </a>
+          <Link to="/about" style={styles.link}>
+            About
+          </Link>
+          <Link to="/product" style={styles.link}>
+            Product
+          </Link>
+          <Link to="/support" style={styles.link}>
+            Support
+          </Link>
+          <Link to="/" style={{ ...styles.link, ...styles.iconLink }}>
+            <i className="fa-solid fa-bars"></i>
+          </Link>
         </div>
       </div>
     </nav>

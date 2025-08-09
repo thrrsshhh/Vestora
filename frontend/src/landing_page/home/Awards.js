@@ -1,48 +1,93 @@
 import React from "react";
 
-function Awards() {
+export default function Awards() {
   return (
-    <div className="container mt-5">
-      <div className="row">
-        <div className="col-6 p-5">
-          <img src="media/images/largestBroker.svg" />
-        </div>
-        <div className="col-6 p-5 mt-5">
-          <h1>Largest stock broker in India</h1>
-          <p className="mb-5">1.5+ Crore Zerodha clients contribute to over 15% of all retail order volumes in India daily by trading and investing in:</p>
-          <div className="row">
-            <div className="col-6">
-              <ul>
-                <li>
-                  <p>Futures and Options</p>
-                </li>
-                <li>
-                  <p>Commodity derivatives</p>
-                </li>
-                <li>
-                  <p>Currency derivatives</p>
-                </li>
-              </ul>
-            </div>
-            <div className="col-6">
-              <ul>
-                <li>
-                  <p>Stocks & IPOs</p>
-                </li>
-                <li>
-                  <p>Direct mutual funds</p>
-                </li>
-                <li>
-                  <p>Bonds and Govt. Securities</p>
-                </li>
-              </ul>
-            </div>
+    <>
+      <section className="awards-section">
+        <h2>Why Choose Vestora?</h2>
+        <p className="subtitle">
+          We provide everything you need to succeed in the stock market
+        </p>
+
+        <div className="card-grid">
+          <div className="card">
+            <div className="icon">⚡</div>
+            <h3>Zero Commission</h3>
+            <p>Trade stocks without paying any commission fees. Keep more of your profits.</p>
           </div>
-          <img src="media/images/pressLogos.png" style={{ width: "90%" }} />
+
+          <div className="card">
+            <div className="icon">📈</div>
+            <h3>Powerful Insights</h3>
+            <p>Advanced analytics and real-time market data to make informed decisions.</p>
+          </div>
+
+          <div className="card">
+            <div className="icon">🔒</div>
+            <h3>Safe & Secure</h3>
+            <p>Bank-level security with 256-bit encryption to protect your investments.</p>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+
+      <style>{`
+        .awards-section {
+          max-width: 1100px;
+          margin: auto;
+          text-align: center;
+          padding: 60px 20px;
+          font-family: 'Segoe UI', sans-serif;
+        }
+
+        .awards-section h2 {
+          font-size: 2rem;
+          color: #0f172a;
+          margin-bottom: 10px;
+        }
+
+        .subtitle {
+          color: #475569;
+          font-size: 1rem;
+          margin-bottom: 40px;
+        }
+
+        .card-grid {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          flex-wrap: wrap;
+        }
+
+        .card {
+          background: white;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+          padding: 30px 20px;
+          border-radius: 12px;
+          width: 300px;
+          transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+          transform: translateY(-5px);
+        }
+
+        .icon {
+          font-size: 2rem;
+          margin-bottom: 10px;
+          color: #2563eb;
+        }
+
+        .card h3 {
+          font-size: 1.2rem;
+          color: #0f172a;
+          margin-bottom: 10px;
+        }
+
+        .card p {
+          color: #475569;
+          font-size: 0.95rem;
+        }
+      `}</style>
+    </>
   );
 }
-
-export default Awards;

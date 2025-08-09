@@ -2,33 +2,71 @@ import React from "react";
 
 function Pricing() {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-4">
-          <h1 className="mb-3 fs-2">Unbeatable pricing</h1>
-          <p>We pioneered the concept of discount broking and price transparency in India. Flat fees and no hidden charges.</p>
-          <a href="" style={{ textDecoration: "none" }}>
-            See pricing <i class="fa-solid fa-arrow-right-long"></i>
-          </a>
-        </div>
-        <div className="col-2"></div>
-        <div className="col-6 mb-5">
-          <div className="row text-center">
-            <div className="col border p-3">
-              <h1 className="mb-3">₹0</h1>
-              <p>
-                Free equity delivery and
-                <br /> direct mutual funds
-              </p>
-            </div>
-            <div className="col border p-3">
-              <h1 className="mb-3">₹20</h1>
-              <p>Intraday and F&O</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+      <section className="cta-section">
+        <h1 className="cta-heading">Ready to Start Trading?</h1>
+        <p className="cta-subtext">
+          Join Vestora today and take control of your financial future
+        </p>
+        <button className="cta-button">
+          Open Your Account <span className="arrow">→</span>
+        </button>
+      </section>
+
+      <style>{`
+        .cta-section {
+          background-color: #2563eb; /* Tailwind's blue-600 equivalent */
+          padding: 80px 20px;
+          text-align: center;
+          color: white;
+        }
+
+        .cta-heading {
+          font-size: 2.5rem;
+          margin-bottom: 20px;
+        }
+
+        .cta-subtext {
+          font-size: 1.1rem;
+          margin-bottom: 30px;
+          color: #e0e7ff;
+        }
+
+        .cta-button {
+          background-color: white;
+          color: #1e3a8a;
+          padding: 12px 24px;
+          font-size: 1rem;
+          border-radius: 8px;
+          border: none;
+          cursor: pointer;
+          font-weight: 600;
+        }
+
+        .cta-button .arrow {
+          margin-left: 8px;
+          font-size: 1.2rem;
+        }
+
+        .cta-button:hover {
+          background-color: #f1f5f9;
+        }
+
+        @media (max-width: 600px) {
+          .cta-heading {
+            font-size: 1.8rem;
+          }
+
+          .cta-subtext {
+            font-size: 1rem;
+          }
+
+          .cta-button {
+            font-size: 0.95rem;
+          }
+        }
+      `}</style>
+    </>
   );
 }
 

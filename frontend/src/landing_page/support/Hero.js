@@ -2,31 +2,26 @@ import React from "react";
 
 function Hero() {
   return (
-    <section className="container-fluid" id="supportHero">
-      <div className="p-5 " id="supportWrapper">
-        <h4>Support Portal</h4>
-        <a href="">Track Tickets</a>
-      </div>
-      <div className="row p-5 m-3">
-        <div className="col-6 p-3">
-          <h1 className="fs-3">Search for an answer or browse help topics to create a ticket</h1>
-          <input placeholder="Eg. how do I activate F&O" />
-          <br />
-          <a href="">Track account opening</a>
-          <a href="">Track segment activation</a>
-          <a href="">Intraday margins</a>
-          <a href="">Kite user manual</a>
-        </div>
-        <div className="col-6 p-3">
-          <h1 className="fs-3">Featured</h1>
-          <ol>
-            <li>
-              <a href="">Current Takeovers and Delisting - January 2024</a>
-            </li>
-            <li>
-              <a href="">Latest Intraday leverages - MIS & CO</a>
-            </li>
-          </ol>
+    <section className="py-5 bg-light text-center">
+      <div className="container">
+        <h1 className="display-5 fw-semibold mb-3">How can we help you?</h1>
+        <p className="lead text-muted mb-4">
+          Get the support you need, when you need it. Our team is here 24/7 to help you succeed.
+        </p>
+
+        <div className="d-flex flex-column flex-md-row justify-content-center gap-4 mt-4">
+          <div className="d-flex align-items-center gap-2 text-success">
+            <i className="bi bi-check-circle-fill"></i>
+            <span>24/7 Support</span>
+          </div>
+          <div className="d-flex align-items-center gap-2 text-success">
+            <i className="bi bi-clock-fill"></i>
+            <span>Average 2min Response</span>
+          </div>
+          <div className="d-flex align-items-center gap-2 text-success">
+            <i className="bi bi-people-fill"></i>
+            <span>Expert Team</span>
+          </div>
         </div>
       </div>
     </section>

@@ -2,32 +2,107 @@ import React from "react";
 
 function Stats() {
   return (
-    <div className="container p-3">
-      <div className="row p-5">
-        <div className="col-6 p-5">
-          <h1 className="fs-2 mb-5">Trust with confidence</h1>
-          <h2 className="fs-4">Customer-first always</h2>
-          <p className="text-muted">That's why 1.5+ crore customers trust Zerodha with ₹4.5+ lakh crores worth of equity investments.</p>
-          <h2 className="fs-4">No spam or gimmicks</h2>
-          <p className="text-muted">No gimmicks, spam, "gamification", or annoying push notifications. High quality apps that you use at your pace, the way you like.</p>
-          <h2 className="fs-4">The Zerodha universe</h2>
-          <p className="text-muted">Not just an app, but a whole ecosystem. Our investments in 30+ fintech startups offer you tailored services specific to your needs.</p>
-          <h2 className="fs-4">Do better with money</h2>
-          <p className="text-muted">With initiatives like Nudge and Kill Switch, we don't just facilitate transactions, but actively help you do better with your money.</p>
-        </div>
-        <div className="col-6 p-5">
-          <img src="media/images/ecosystem.png" style={{ width: "90%" }} />
-          <div className="text-center">
-            <a href="" className="mx-5" style={{ textDecoration: "none" }}>
-              Explore ours products <i class="fa-solid fa-arrow-right-long"></i>
-            </a>
-            <a href="" style={{ textDecoration: "none" }}>
-              Try Kite Demo <i class="fa-solid fa-arrow-right-long"></i>
-            </a>
+    <>
+      <section className="testimonial-section">
+        <h2>What Our Users Say</h2>
+        <p className="subtext">Join thousands of satisfied traders who trust Vestora</p>
+
+        <div className="testimonial-grid">
+          <div className="testimonial-card">
+            <div className="stars">★★★★★</div>
+            <p className="quote">
+              "Vestora has transformed my trading experience. The insights are incredible!"
+            </p>
+            <p className="name">Sarah Johnson</p>
+            <p className="role">Day Trader</p>
+          </div>
+
+          <div className="testimonial-card">
+            <div className="stars">★★★★★</div>
+            <p className="quote">
+              "The zero commission model and powerful tools make this my go-to platform."
+            </p>
+            <p className="name">Michael Chen</p>
+            <p className="role">Investment Advisor</p>
+          </div>
+
+          <div className="testimonial-card">
+            <div className="stars">★★★★★</div>
+            <p className="quote">
+              "Clean interface, reliable data, and excellent customer support. Highly recommended!"
+            </p>
+            <p className="name">Emily Rodriguez</p>
+            <p className="role">Portfolio Manager</p>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+
+      <style>{`
+        .testimonial-section {
+          max-width: 1100px;
+          margin: auto;
+          text-align: center;
+          padding: 60px 20px;
+          font-family: 'Segoe UI', sans-serif;
+        }
+
+        .testimonial-section h2 {
+          font-size: 2rem;
+          color: #0f172a;
+          margin-bottom: 10px;
+        }
+
+        .subtext {
+          color: #475569;
+          font-size: 1rem;
+          margin-bottom: 40px;
+        }
+
+        .testimonial-grid {
+          display: flex;
+          gap: 30px;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .testimonial-card {
+          background: white;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+          padding: 30px 20px;
+          border-radius: 12px;
+          width: 300px;
+          text-align: left;
+          transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+          transform: translateY(-5px);
+        }
+
+        .stars {
+          color: #facc15;
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+        }
+
+        .quote {
+          font-style: italic;
+          color: #1e293b;
+          margin-bottom: 15px;
+        }
+
+        .name {
+          font-weight: bold;
+          color: #0f172a;
+          margin-bottom: 3px;
+        }
+
+        .role {
+          color: #64748b;
+          font-size: 0.9rem;
+        }
+      `}</style>
+    </>
   );
 }
 
