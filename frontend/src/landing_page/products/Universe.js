@@ -59,12 +59,13 @@ function Universe() {
           </p>
         </div>
 
-        <button
-          className="p-2 btn btn-primary fs-5 mb-5"
-          style={{ width: "15%", margin: "0 auto" }}
+        <a
+          href="https://zerodha-clone-dashboard.vercel.app/register"
+          className="btn btn-primary fs-5 mb-5"
+          style={{ width: "15%", margin: "0 auto", display: "block" }}
         >
           Get Started
-        </button>
+        </a>
       </div>
     </div>
   );

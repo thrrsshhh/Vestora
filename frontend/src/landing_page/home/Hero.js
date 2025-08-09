@@ -13,7 +13,9 @@ const Hero = () => {
             and bank-level security. Start building your wealth today.
           </p>
           <div className="hero-buttons">
-            <a href="/signup" className="btn primary-btn">
+           <a
+            href="https://zerodha-clone-dashboard.vercel.app/register"
+           className="btn primary-btn">
               Open Account →
             </a>
             <a href="/about" className="btn secondary-btn">

@@ -8,10 +8,10 @@ function Pricing() {
         <p className="cta-subtext">
           Join Vestora today and take control of your financial future
         </p>
-        <button className="cta-button">
-          Open Your Account <span className="arrow">→</span>
-        </button>
-      </section>
+        <a href="https://zerodha-clone-dashboard.vercel.app/register" className="cta-button">
+          Open Account <span className="arrow">→</span>
+        </a>
+      </section> {/* <-- Added this closing tag */}
 
       <style>{`
         .cta-section {
@@ -41,6 +41,8 @@ function Pricing() {
           border: none;
           cursor: pointer;
           font-weight: 600;
+          text-decoration: none;
+          display: inline-block;
         }
 
         .cta-button .arrow {
